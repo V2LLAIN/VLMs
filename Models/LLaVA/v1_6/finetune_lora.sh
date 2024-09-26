@@ -1,8 +1,4 @@
 #!/bin/bash
-    #  --data_path /data/hyeongchanim/LLaVA/train.json \
-    # --eval_data_path /data/hyeongchanim/LLaVA/val.json \
-    # --data_path /data/hyeongchanim/LLaVA/HC_Forgery_Sample128/train.json \
-    # --eval_data_path /data/hyeongchanim/LLaVA/HC_Forgery_Sample128/val.json \
 
 deepspeed --include localhost:1 llava/train/train_mem.py \
     --lora_enable True --lora_r 16 --lora_alpha 32 --mm_projector_lr 2e-5 \
@@ -11,9 +7,9 @@ deepspeed --include localhost:1 llava/train/train_mem.py \
     --model_name_or_path liuhaotian/llava-v1.6-vicuna-13b \
     --version chatml_direct_ft \
     --cache_dir /data/huggingface_models \
-    --image_folder /data/hyeongchanim/QLoRA_FT/Qwen-VL/HC_Forgery \
-    --data_path /data/hyeongchanim/LLaVA/train.json \
-    --eval_data_path /data/hyeongchanim/LLaVA/val.json \
+    --image_folder /data/HC \
+    --data_path /data//LLaVA/train.json \
+    --eval_data_path /data/LLaVA/val.json \
     --vision_tower openai/clip-vit-large-patch14-336 \
     --mm_projector_type mlp2x_gelu \
     --mm_vision_select_layer -2 \
