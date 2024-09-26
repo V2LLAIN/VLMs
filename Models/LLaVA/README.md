@@ -3,7 +3,7 @@ cf) LLaVA LoRA Fine-Tuning시, non_lora_trainables.bin파일과 config.json파�
 - bash llava_config_json_not_created.sh 실행 이후 lora fine-tuning진행
 
 cf-2) Fine-Tuning LLaVA-v1.6 LoRA:
-- v1_6 파일 참고
+- v1_6 파일 참고 (LLaVA/scripts/v1_6 으로 경로가 되어있어야함.)
 
 # 🌋 LLaVA: Large Language and Vision Assistant
 
