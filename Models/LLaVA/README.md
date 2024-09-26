@@ -1,3 +1,10 @@
+cf) LLaVA LoRA Fine-Tuning시, non_lora_trainables.bin파일과 config.json파일이 생성되지 않는 문제점 해결방법:
+- llava_config_json_not_created.sh 다운받고 LLaVA 디렉토리안에 넣음.
+- bash llava_config_json_not_created.sh 실행 이후 lora fine-tuning진행
+
+cf-2) Fine-Tuning LLaVA-v1.6 LoRA:
+- v1_6 파일 참고
+
 # 🌋 LLaVA: Large Language and Vision Assistant
 
 *Visual instruction tuning towards large language and vision models with GPT-4 level capabilities.*
