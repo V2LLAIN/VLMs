@@ -1,3 +1,16 @@
+from turtle import forward
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+import matplotlib as mpl
+import matplotlib.cm as cm
+import numpy as np
+
+
+from torchvision import transforms
+from PIL import Image
+from typing import Union, List
+
 class GradCamForVQA(nn.Module):
     def __init__(self, model: nn.Module, layer: nn.Module, processor: nn.Module, device: torch.device) -> None:
         super(GradCamForVQA, self).__init__()
